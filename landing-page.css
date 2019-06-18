@@ -1,0 +1,379 @@
+/* Search Bar Formatting and Styles */
+.searchBar
+{
+	width:1000px;
+	height:46px;
+	border-color:#F95A1F;
+	border-style: groove;
+	border-radius: 5px;
+}
+.searchBarPositioning 
+{
+  position: relative;
+  left: 80px;
+  width: 300px;
+  top:190px;
+  padding: 10px;
+}
+.searchBarButtonText
+{
+	background-color: #F95A1F;
+    display: inline-block;
+	color:white;
+    font-size: 11px;
+	width:100px;
+	border-color:#F95A1F;
+	border-style: groove;
+	border-radius: 3px;
+}
+.searchBarButton
+{
+  position: relative;
+  left: 999px;
+  top:-52px;
+}
+
+
+/* Box Styles */
+#mainContainer 
+{
+  position: absolute;
+  width:100%;
+  top:100px;
+  text-align:center;
+}
+.leftBox 
+{
+  position: relative;
+  float:left;
+  width:25%;
+  top:206px;
+  margin-left: 3%;
+  background-color: white;
+  border-style: groove;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.centerBox 
+{
+  position: relative;
+  margin-left: 32%;
+  margin-right: 32%;
+  width:25%;
+  top:206px;
+  background-color: white;
+  border-style: groove;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.rightBox 
+{
+  position: relative;
+  float:right;
+  width:25%;
+  top:-67px;
+  margin-right: 120px;
+  background-color: white;
+  border-style: groove;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Box Content Styles */
+.titleText
+{
+  font-size:110%;
+  font-family:"verdana";
+}
+.hairLineStyle
+{
+	height:1px; 
+	border:none; 
+	background-color:gray; 
+	width:90%;
+}
+.breakLineAS 
+{
+  line-height: 50%;
+  color:orange;
+  font-size:100%;
+	font-family:"verdana";
+}
+.smallBoxText 
+{
+  line-height: 80%;
+  color:black;
+  font-size: 9;
+  font-size:14px;
+	font-family:"verdana";
+  font-weight: bold;
+}
+  .smallBox
+{
+  position: relative;
+	background-color: #F8F1D4;
+	color:black;
+	width:80%;
+    margin-bottom: 8%;
+    left:20px;
+    right:20px;
+	border-color:#F8F1D4;
+	border-style: groove;
+	border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/*media quarries, width sizes are random 
+Responsivity tested with Brackets Live Preview
+Right box is slightly off in google chrome preview*/
+@media screen and (max-width: 1700px) 
+{
+        .searchBarPositioning .searchBar 
+        {
+            width: 1200px ;
+        }
+        .searchBarPositioning .searchBarButton 
+         {
+            left: 1200px;
+         }
+     .rightBox 
+        {
+          margin-right: 13.75%;
+          top:-73px;
+        }
+    .breakLineAS 
+       {
+        font-size: 130% ;
+     }
+    
+    .smallBox
+    {
+        width: 90%;
+        margin-bottom: 3%;
+    }
+    .smallBoxText 
+    {
+        font-size: 102%;
+    }
+}
+
+@media screen and (max-width: 1521px) 
+{
+        .searchBarPositioning .searchBar 
+        {
+            width: 990px ;
+        }
+        .searchBarPositioning .searchBarButton 
+         {
+            left: 980px;
+         }
+     .rightBox 
+        {
+          margin-right: 13.75%;
+          top:-66.5px;
+        }
+    .breakLineAS 
+       {
+        font-size: 130% ;
+     }
+    
+        .smallBox
+    {
+        width: 85%;
+        margin-bottom: 3%;
+    }
+    .smallBoxText 
+    {
+        font-size: 95%;
+    }
+}
+
+@media screen and (max-width: 1261px) 
+{
+  
+        .searchBarPositioning .searchBar {
+            width: 800px ;
+        }
+        .searchBarPositioning .searchBarButton {
+            left: 800px;
+    
+  }
+    
+     .rightBox {
+          margin-right: 13.75%;
+          top:-52px;
+       
+}
+    
+    .breakLineAS {
+        font-size: 130% ;
+
+    }
+        .smallBox
+    {
+        width: 85%;
+        margin-bottom: 3%;
+    }
+    .smallBoxText 
+    {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 1000px) 
+{
+  
+        .searchBarPositioning .searchBar {
+            width: 703px ;
+        }
+        .searchBarPositioning .searchBarButton {
+            left: 623px;
+    
+  }
+    
+     .rightBox {
+          margin-right: 13.75%;
+          top:-31px;
+       
+}
+    
+    .breakLineAS {
+        font-size: 100% ;
+
+    }
+    
+        .smallBox
+    {
+        width: 80%;
+        margin-bottom: 2%;
+    }
+    .smallBoxText 
+    {
+        font-size: 85%;
+    }
+  
+}
+
+@media screen and (max-width: 896px) 
+{
+  
+        .searchBarPositioning .searchBar 
+    {
+            width: 500px ;
+        }
+        .searchBarPositioning .searchBarButton 
+ {
+         left: 500px;
+    
+  }
+     .rightBox 
+    {
+          margin-right: 13%;
+          top:-17px; 
+    }
+    .breakLineAS
+    {
+        font-size: 90% ;
+    }
+    
+        .smallBox
+    {
+        width: 80%;
+        margin-bottom: 2%;
+    }
+    .smallBoxText 
+    {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 700px) 
+{
+     .searchBarPositioning .searchBar 
+    {
+            width: 500px ;
+            height: 46px;
+    }
+        .searchBarPositioning .searchBarButton 
+    {
+            left:430px;
+    }
+    .breakLineAS 
+    {
+        font-size: 70% ;
+    }
+    .titleText
+    {
+        font-size: 80%;
+    }
+    .rightBox 
+    {
+     margin-right: 8%;
+      top:25px;
+    }
+     .leftBox
+    {
+        margin-left: 8%
+    }
+    .centerBox
+    {
+        margin-left: 37%;
+    }
+    .smallBox
+    {
+        width: 65%;
+        margin-bottom: 3%;
+    }
+    .smallBoxText 
+    {
+        font-size: 50%;
+    }
+    
+    
+@media screen and (max-width: 500px) 
+{
+     .searchBarPositioning .searchBar 
+    {
+            width: 240px ;
+            height: 46px;
+            left:10px;
+    }
+        .searchBarPositioning .searchBarButton 
+    {
+            left: 230px;
+            height: 20px;
+            width
+    }
+    .breakLineAS 
+    {
+        font-size: 70% ;
+    }
+    .titleText
+    {
+        font-size: 80%;
+    }
+    .rightBox 
+    {
+     margin-right: 8%;
+      top:25px;
+    }
+     .leftBox
+    {
+        margin-left: 8%
+    }
+    .centerBox
+    {
+        margin-left: 37%;
+    }
+    .smallBox
+    {
+        width: 65%;
+        margin-bottom: 3%;
+    }
+    .smallBoxText 
+    {
+        font-size: 50%;
+    }
+}
+
